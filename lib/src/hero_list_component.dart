@@ -27,6 +27,7 @@ class HeroListComponent implements OnInit{
   
   void _getHeroes() async => heroes = await _heroService.getAll();
   
+  @override
   void ngOnInit() => _getHeroes();
   
   String _heroUrl(int id) => RoutePaths.hero.toUrl(parameters: {idParam: '$id'});

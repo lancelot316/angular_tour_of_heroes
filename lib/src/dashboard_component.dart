@@ -4,7 +4,7 @@ import 'package:angular_router/angular_router.dart';
 import 'hero.dart';
 import 'hero_service.dart';
 import 'route_paths.dart';
-import 'hero_search-component.dart';
+import 'hero_search_component.dart';
 
 @Component(
   selector: 'my-dashboard',
@@ -18,6 +18,7 @@ class DashboardComponent implements OnInit{
 
   DashboardComponent(this._heroService);
 
+  @override
   void ngOnInit() async {
     heroes = (await _heroService.getAll()).skip(1).take(4).toList();
   }
