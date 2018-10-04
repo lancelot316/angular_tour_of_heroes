@@ -5,7 +5,7 @@ import 'package:angular_router/angular_router.dart';
 import 'package:stream_transform/stream_transform.dart';
 
 import 'route_paths.dart';
-import 'hero_serch_service.dart';
+import 'hero_search_service.dart';
 import 'hero.dart';
 
 @Component(
